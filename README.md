@@ -38,7 +38,7 @@ npm run dev
 
 ## Database Setup
 
-- Default DATABASE_URL in `backend/.env.example` points to `postgresql://postgres:Aditya@localhost:5432/store_ratings`; edit if a different password is used.
+- Default DATABASE_URL in `backend/.env.example` points to `postgresql://postgres:password@localhost:5432/store_ratings`; edit if a different password is used.
 - To create DB in psql:
 ```powershell
 psql -U postgres -h localhost -c "CREATE DATABASE store_ratings;"
@@ -171,7 +171,4 @@ MIT
 
 ---
 
-**How this matches the "FullStack Intern Coding Challenge - V1.1":**
 Single auth with signup/login/JWT; role-based pages and APIs, store listing/detail/search, rating create/update with unique constraint, owner dashboards and averages, admin user/store management and stats, sorting/filtering, and validation constraints are implemented to spec.
-
-Run this repository as-is with the commands above to get a working local install; edit `backend/.env` to inject different DB credentials if needed, keeping defaults that match the provided local PostgreSQL database details.
