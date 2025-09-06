@@ -1,0 +1,26 @@
+﻿# Root ignores
+node_modules/
+dist/
+build/
+*.log
+logs/
+.env
+.env.local
+
+# Backend
+backend/node_modules/
+backend/dist/
+backend/.env
+backend/.env.local
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+
+# OS/IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

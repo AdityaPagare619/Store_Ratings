@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-50: #f4f8ff;
+  --brand-100: #e6f0ff;
+  --brand-300: #a4c2ff;
+  --brand-500: #4b82ff;
+  --accent-yellow: #ffd24d;
+  --neutral: #111827;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(180deg, var(--brand-50), #ffffff);
+  color: var(--neutral);
+}
+
+.card-glass {
+  @apply bg-white/60 backdrop-blur-md border border-white/40 shadow-lg;
+}
+
+.button {
+  @apply px-4 py-2 rounded-md bg-[var(--brand-500)] text-white transition-transform duration-150 shadow-md;
+}
+.button:hover {
+  transform: translateY(-2px);
+}
+.button:disabled {
+  @apply opacity-60 cursor-not-allowed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .button:hover {
+    transform: none;
+  }
+}
